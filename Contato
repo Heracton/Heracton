@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="CSS/contato.css">
+
+  <title>Contato</title>
+
+</head> 
+
+<body>
+
+  <header class="container"> <!-- inicio do titulo -->   
+
+    <img src="Logosemfundo.png">
+
+   <nav>
+
+     <a class="logo" href="index.html">Inicio</a>
+
+     <a href="sobre.html">Sobre</a>
+
+     <a href="procedimentos.html">Procedimentos</a>
+
+     <a href="contato.html">Contato</a>
+
+   </nav> <!-- fim do titulo -->
+
+  </header>  
+
+  <canvas id="canvas"></canvas>
+
+  <div class="contate"> 
+
+    <h2>Entre em contato</h2>   
+
+     <p>
+
+       Entre em contato conosco pelo 
+
+       <a href="https://www.instagram.com/draroberta.lima/" >Intagram</a> 
+
+       
+
+       </p>
+
+     <p>
+
+       Entre em contato conosco pelo  <a href="https://www.flaticon.com/br/icones-gratis/whatsapp" title="whatsapp ícones" class="icon">
+
+    target="_blank"
+
+    style="position:fixed;"
+
+    <svg enable-background="new 0 0 512 512"  version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+
+</a>
+
+      
+
+       <a href="https://api.whatsapp.com/message/H2KBU26E7CVVJ1?autoload=1&app_absent=0">WhatsApp</a>  
+
+       
+
+       </p>
+
+  </div> 
+
+</nav> 
+
+<section class="content">
+
+  <div class="contato">
+
+    <h3>Formulário de contato</h3> <br>
+
+    <form class="form" method="POST" action="./email.php">
+
+      <input class="field" type="name" placeholder="nome"> <br>
+
+      <input class="field" type="email" name="email" placeholder="E-mail"> <br>
+
+      <textarea class="field" name="message" placeholder="Digite a sua mensagem.">
+
+      </textarea> <br>
+
+      <input class="field" type="submit" value="Enviar">
+
+    </form>
+
+  </div>
+
+  </section>
+
+  <script src="js/contato.js"></script>
+
+</body>
+
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  font-size: 15px; 
+  display: inline-block; 
+}
+
+header {
+  padding-bottom: 10px; 
+  background-image: linear-gradient(to right, #42445A, #B9923F);
+  min-width: 150px;
+  padding-top: 30px;
+  font-size: 15px;
+  color: black;
+}
+
+header>img {
+  width: 250px;
+  padding-left: 600px;
+  max-width: 300px;
+  min-width: 10px;
+}
+
+header img, nav {
+  display: inline-block;
+}
+
+nav {
+  text-align: right;
+  top: 50px; 
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 120px;
+  text-decoration: none; 
+}
+
+.container {
+  display: flex; 
+  align-items: center; 
+}
+
+nav > a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+
+nav>a:hover {
+  background-image: linear-gradient(to right #42445A, #B9923F);
+  color: green;
+}
+
+.contate {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightgray;
+  text-decoration: none;
+}
+
+.decoro {
+  text-decoration: none; 
+}
+
+div > h2 {
+  font-size: 70px;
+  color: lightgray; 
+  padding-top: 20px; 
+}
+
+div > a {
+  text-align: right;
+}
+
+div > p {
+  text-align: right; 
+  padding-right: 10px; 
+  padding: 10px; 
+  font-size: 20px; 
+  font-family: sans-serif;  
+  color: black;  
+} 
+
+div > a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex; 
+  justify-content: center; 
+}
+
+.contato {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form {
+  display: flex; 
+  flex-direction: column; 
+}
+.field {
+  padding: 10px; 
+  margin-bottom: 15px; 
+  border: 1px solid blue;
+  border-radius: 5px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 16px; 
+}
+
+textarea {
+  height: 150px; 
+}
+
+section h3 {
+  font-size: 20px;
+  padding-left: 10px;  
+}  
+
+.field:hover {
+  background-color: blue; 
+  color: green; 
+}
+ 
+ .link {
+   text-decoration: none; 
+ }
